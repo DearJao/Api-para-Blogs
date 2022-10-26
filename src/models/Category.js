@@ -2,11 +2,12 @@ module.exports = (sequelize, DataTypes) => {
   const Category = sequelize.define('Category', { 
     id: {
       autoIncrement: true,
-      prymaryKey: true,
+      primaryKey: true,
       type: DataTypes.INTEGER },
     name: DataTypes.STRING,
   },
   {
+    timestamps: false,
     underscored: true,
   });
 
