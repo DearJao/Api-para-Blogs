@@ -2,7 +2,7 @@ const { User } = require('../models');
 const tokenGenerate = require('./token/token.generate');
 const validateUser = require('./validations/validator');
 
-const getUser = async (body) => {
+const login = async (body) => {
   const { email, password } = body;
 
   if (!email || !password) {
@@ -12,7 +12,7 @@ const getUser = async (body) => {
   const user = await User.findOne({
     where: { email },
   });
-  console.log(user);
+
   if (!user || user.password !== password) {
     return { type: 'BAD_REQUEST', message: 'Invalid fields' };
   }
@@ -40,7 +40,14 @@ const createUser = async (body) => {
   return { type: null, message: token };
 };
 
+const getUsers = async () => {
+  const users = await User.findAll({ attributes: { exclude: ['password'] } });
+
+  return { type: null, message: users };
+};
+
 module.exports = {
-  getUser,
+  login,
   createUser,
+  getUsers,
 };
