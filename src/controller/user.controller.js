@@ -18,7 +18,7 @@ const createUser = async (req, res) => {
 
   if (type) return res.status(mapError(type)).json({ message });
 
-  return res.status(200).json({ token: message });
+  return res.status(201).json({ token: message });
 };
 
 // https://app.sli.do/event/1E3nDTpqY51JrQeLW48XrW and 91646604726
