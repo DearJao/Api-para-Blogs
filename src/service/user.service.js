@@ -31,7 +31,7 @@ const createUser = async (body) => {
     where: { email },
   });
 
-  if (user.length !== 0) return { type: 'USER_EXISTS', message: 'User already registered' };
+  if (user) return { type: 'USER_EXISTS', message: 'User already registered' };
 
   const { dataValues } = await User.create(body);
 

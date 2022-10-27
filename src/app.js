@@ -1,5 +1,5 @@
 const express = require('express');
-const router = require('./routes/router');
+const router = require('./routes/index');
 const tokenValidation = require('./middleware/token.validation');
 
 const app = express();
