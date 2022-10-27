@@ -27,10 +27,20 @@ const getUser = async (_req, res) => {
   return res.status(200).json(message);
 };
 
+const getUserById = async (req, res) => {
+  const { id } = req.params;
+  const { type, message } = await UserSevice.getUsersById(id);
+
+  if (type) return res.status(mapError(type)).json({ message });
+
+  return res.status(200).json(message);
+};
+
 // https://app.sli.do/event/1E3nDTpqY51JrQeLW48XrW and 91646604726
 
 module.exports = {
   login,
   createUser,
   getUser,
+  getUserById,
 };
