@@ -13,7 +13,7 @@ const createCategory = async (req, res) => {
 };
 
 const getCategory = async (_req, res) => {
-  const { message } = await categoriesSevice.getUsers();
+  const { message } = await categoriesSevice.getCategories();
 
   return res.status(200).json(message);
 };

@@ -26,9 +26,9 @@ const createCategories = async (body) => {
 };
 
 const getCategories = async () => {
-  const users = await Category.findAll({ attributes: { exclude: ['password'] } });
+  const categories = await Category.findAll({});
 
-  return { type: null, message: users };
+  return { type: null, message: categories };
 };
 
 module.exports = {
