@@ -1,5 +1,15 @@
 const { Category } = require('../models');
 
+// const verificaCategoria = async (name) => {
+//   const verifyCategory = await Category.findOne({
+//     where: { name },
+//   });
+
+//   if (verifyCategory) {
+//     return { type: 'CATEGORY_EXISTS', message: 'Category already exists' };
+//   }
+// };
+
 const createCategories = async (body) => {
   const { name } = body;
 

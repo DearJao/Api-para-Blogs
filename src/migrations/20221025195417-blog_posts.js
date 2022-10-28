@@ -1,7 +1,5 @@
 'use strict';
 
-const { TIMESTAMP } = require("mysql2/lib/constants/types");
-
 module.exports = {
   up: async (queryInterface, Sequelize) => {
     await queryInterface.createTable('blog_posts', {
@@ -25,13 +23,17 @@ module.exports = {
           key: 'id'
         },
         onUpdate: 'CASCADE',
-        onUpdate:'CASCADE',
+        onUpdate: 'CASCADE',
       },
       published: {
         type: Sequelize.DATE,
+        allowNull: true,
+        defaultValue: Sequelize.NOW,
       },
       updated: {
         type: Sequelize.DATE,
+        allowNull: true,
+        defaultValue: Sequelize.NOW,
       }
     }, {
       timestamps: false

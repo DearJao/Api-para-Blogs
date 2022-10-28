@@ -1,6 +1,6 @@
 const { User } = require('../models');
 const tokenGenerate = require('./token/token.generate');
-const validateUser = require('./validations/validator');
+const validator = require('./validations/validator');
 
 const login = async (body) => {
   const { email, password } = body;
@@ -23,7 +23,7 @@ const login = async (body) => {
 };
 
 const createUser = async (body) => {
-  const error = validateUser(body);
+  const error = validator.validateUser(body);
   if (error.type) return error;
 
   const { email } = body;
