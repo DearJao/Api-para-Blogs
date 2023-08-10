@@ -1,7 +1,7 @@
 <h1><strong>Bem vindo/a ao meu projeto API PARA BLOGS!!</strong>></h1>
 
 <h2><strong>Sobre o projeto:</strong></h2>
-  Projeto estruturado pensando em uma aplicação de vendas focada em carros e um espaço para motocicletas, nele você pode ver uma lista detalhada sobre os carros e suas informações como preço, cor, modelo e quantidade de assentos. No caso das motos você pode consultar os modelos disponíveis, preço, cilindrada e ano. Também é possivel cadastrar e apagar veiculos do banco de dados, e atualizar qualquer informação, tudo isso passando por casos de testes para não corromper o banco de dados.
+  Criei esse projeto totalmente do zero, desde as migrations, models e cada regra de autenticação, que incluisve é um dos focos dele, a ideia que essa API possa simular todo o processo de crianção de uma conta para um blog ou rede social, contando com rotas de criação de usuários com senha e login, após isso cada cada que queira se fazer e necessário passar pela autenticação JWT, o usuario precisará ter uma autorização valida para procurar, criar, editar e apagar posts, tal quanto adicionar e procurar pessoas na "rede".
 
 <h2><strong>Construção e Features/Tecnologias:</strong></h2                                                                    
       A construção foi feita através do <strong>Docker</strong> para que ele possa ser usado em qualquer maquina, contruido em um banco de dados relacional feito
