@@ -1,4 +1,4 @@
-<h1><strong>Bem vindo/a ao meu projeto API PARA BLOGS!!</strong>></h1>
+<h1><strong>Bem vindo/a ao meu projeto API PARA BLOGS!!</strong></h1>
 
 <h2><strong>Sobre o projeto:</strong></h2>
   Criei esse projeto totalmente do zero, desde as migrations, models e cada regra de autenticação, que incluisve é um dos focos dele, a ideia que essa API possa simular todo o processo de crianção de uma conta para um blog ou rede social, contando com rotas de criação de usuários com senha e login, após isso cada cada que queira se fazer e necessário passar pela autenticação JWT, o usuario precisará ter uma autorização valida para procurar, criar, editar e apagar posts, tal quanto adicionar e procurar pessoas na "rede".
