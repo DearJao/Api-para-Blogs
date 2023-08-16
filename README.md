@@ -30,6 +30,13 @@
 </details>
 
 <h2><summary><strong>Para rodar o projeto siga as intruções:</strong></summary></h2>
+      - Para que o projeto funcione você precisa ter a biblioteca .NODE.JS e o docker instalado em sua maquina. Caso não tenha neste link :
+      <link>https://nodejs.org/en/download</link> e neste: <link>https://www.docker.com/products/docker-desktop/</link> você tera acesso ao dowload oficial da
+      biblioteca e as intruções para configurar.
+      </br>
+      (obs* o projeto foi contruido na versão 18.12.1, outras versões podem ocasionar erros inesperados)
+      </br>
+      </br>
       - Dê um git clone no seu trminal de sua maquina um pasta vazia para instalar o projeto desta maneira:
       </br>
         git clone git@github.com:DearJao/Api-para-Blogs.git
@@ -38,12 +45,6 @@
       - Em seguida você precisa entrar na pasta do projeto, através do seu gerenciador de arquivos ou no terminal no seu editor de arquivos
         </br>
         </br>
-      - Para o projeto funcionar você precisa ter a biblioteca .NODE.JS instalada em sua maquina. Caso não tenha neste link: https://nodejs.org/en/download você tera
-      acesso ao dowload oficial da biblioteca e as intruções para configurar.
-      </br>
-(obs* o projeto foi contruido na versão 18.12.1, outras versões podem ocasionar erros inesperados)
-</br>
-</br>
       - Primeiramente use o comando docker-compose up -d --build</br>
       (você precisa ter o docker instalado na sua maquina)
       </br>
